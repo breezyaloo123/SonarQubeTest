@@ -13,12 +13,12 @@ import java.util.List;
 class ApiRoboFrameworkApplicationTests {
 
 
-    @Autowired
-    RetrieveCustomers retrieveCustomers;
-
-    @Test
-    void retrieveCustomersTest(){
-        List<Customer> customers =retrieveCustomers.retrieveAllCustomers();
-        Assertions.assertNotNull(customers);
-    }
+//    @Autowired
+//    RetrieveCustomers retrieveCustomers;
+//
+//    @Test
+//    void retrieveCustomersTest(){
+//        List<Customer> customers =retrieveCustomers.retrieveAllCustomers();
+//        Assertions.assertNotNull(customers);
+//    }
 }

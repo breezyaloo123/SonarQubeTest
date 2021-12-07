@@ -15,6 +15,11 @@ class ApiRoboFrameworkApplicationTests {
 
     @Autowired
     RetrieveCustomers retrieveCustomers;
+
+    @Test
+    void contextLoads() {
+    }
+
     @Test
     void retrieveCustomersTest(){
         List<Customer> customers =retrieveCustomers.retrieveAllCustomers();

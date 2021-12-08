@@ -7,23 +7,18 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 //import java.util.List;
 
 @SpringBootTest(classes = ApiRoboFrameworkApplication.class)
 class ApiRoboFrameworkApplicationTests {
-
+    @Autowired
+    RetrieveCustomers retrieveCustomers;
     @Test
     void contextLoads() {
+        List<Customer> customers = retrieveCustomers.retrieveAllCustomers();
+        Assertions.assertNotNull(customers);
+
     }
-
-
-
-//    @Autowired
-//    RetrieveCustomers retrieveCustomers;
-//
-//    @Test
-//    void retrieveCustomersTest(){
-//        List<Customer> customers =retrieveCustomers.retrieveAllCustomers();
-//        Assertions.assertNotNull(customers);
-//    }
 }

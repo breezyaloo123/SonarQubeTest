@@ -18,5 +18,7 @@ class ApiRoboFrameworkApplicationTests {
         List<Customer> customers = retrieveCustomers.retrieveAllCustomers();
         Assertions.assertNotNull(customers);
 
+
+
     }
 }

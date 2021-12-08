@@ -21,7 +21,7 @@ public class RetrieveCustomers {
 }
 @GetMapping(path = "/customers/{id}")
     public String retrieveCustomer(@PathVariable Integer id){
-    String str = "";
+    //String str = "";
     if(customerRepository.existsById(id)){
     return customerRepository.findById(id).isPresent()
             ? customerRepository.getById(id).getFirstname()
